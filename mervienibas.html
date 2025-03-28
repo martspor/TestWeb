@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informācijas daudzuma mērvienības</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style='background-image: url("images/cipari.jpg");'>
+        <h1>Informācijas daudzuma mērvienības</h1>
+        <form style="font-size: 20px; background-color: rgb(220,220,0)">
+            <p><input type="number" id="gigabaiti" name="gigabaiti"> GB =</p>
+            <p><input type="button" value="Izteikt megabaitos" onclick="uzMB()"> 
+               <input type="text" id="megabaiti" name="megabaiti" > MB</p>
+            <p><input type="button" value="Izteikt mibibaitos" onclick="uzMiB()"> 
+               <input type="text" id="mibibaiti" name="mibibaiti" > MiB</p>
+        </form>
+
+        <script>
+            function uzMB() {
+                var gb = parseFloat(document.getElementById("gigabaiti").value);
+                var mb = gb * 1000;
+                document.getElementById("megabaiti").value = mb;
+            }
+
+            function uzMiB() {
+                var gb = parseFloat(document.getElementById("gigabaiti").value);
+                var mib = gb * 1024;
+                document.getElementById("mibibaiti").value = mib;
+
+            }
+        </script>
+    </body>
+</html>
