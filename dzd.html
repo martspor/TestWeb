@@ -14,12 +14,13 @@
             <p>gads <input type='text' name='gads'></p>
             <p>mēnesis <input type='text' name='menesis'></p>
             <p>diena <input type='text' name='datums'></p>
-            <input name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" type="button" onclick="dienas()">
+            <input name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" type="button" onclick="Dienas()">
             <p>Līdz svētkiem atlikušas <input name='dienas' type='text'> dienas : ))</p>
             
         </form>
         <script>
-             function dienas() {
+            
+             function Dienas() {
                 
                 let gads = parseInt(document.getElementsByName('gads')[0].value);
                 let menesis = parseInt(document.getElementsByName('menesis')[0].value);
